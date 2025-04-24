@@ -1,6 +1,10 @@
 # Web files
 static/
 .github/workflows/
+.htaccess
+
+# Github files
+.gitignore
 
 # Python files
 pyproject.toml
