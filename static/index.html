@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bfthon 🧠⇄🐍 - Homepage</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Bfthon 🧠⇄🐍</h1>
+    <p>A <strong>lightweight</strong> Python module for <strong>bidirectional</strong> conversion between <strong>Pythton</strong> strings and <strong>Brainfuck</strong> code.</p>
+    
+    <div class="badges">
+        <img src="https://img.shields.io/github/forks/whotfusests/bfthon?style=social" alt="forks">
+        <img src="https://img.shields.io/github/stars/whotfusests/bfthon?style=social" alt="stars">
+        <img src="https://img.shields.io/github/watchers/whotfusests/bfthon?style=social" alt="watchers">
+        <img src="https://img.shields.io/github/v/release/whotfusests/bfthon?logo=github" alt="release">
+        <img src="https://img.shields.io/badge/Made%20with-Python-%233572A5?logo=python" alt="python">
+    </div>
+
+    <div class="button-group">
+        <button class="btn btn-primary" onclick="copyInstall()">Install</button>
+        <a href="https://github.com/whotfusests/bfthon/releases/" class="btn btn-secondary">Source Code</a>
+    </div>
+
+    <div class="section">
+        <h2>Features</h2>
+        <li>🔄 Bi-directional Conversion</li>
+        <li>🚀 Zero Dependencies</li>
+        <li>🐍 Python 3.6+</li>
+        <li>📦 Lightweight</li>
+    </div>
+
+    <div class="section">
+        <h2>Usage Examples</h2>
+        <pre><code>from bfthon import encode, decode
+
+# Encoding
+bf_code = bfthon.encode('print("Hello World")')
+print(bf_code)
+# Output: ++++++++[>++++[...]
+
+# Decoding
+output = bfthon.decode("++++++++[>++++[...]")
+print(output)
+# Output: Hello World</code></pre>
+    </div>
+
+    <div class="license">
+        &#169; 2025 whotfusests All rights reserved. • Hosted on GitHub
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

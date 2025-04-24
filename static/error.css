@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.glitch {
+    position: relative;
+    color: #7c3aed;
+}
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    clip: rect(0, 900px, 0, 0);
+}
+.glitch::before {
+    animation: glitch-top 1s infinite linear alternate-reverse;
+    color: #f0f;
+    z-index: -1;
+}
+.glitch::after {
+    animation: glitch-bottom 1s infinite linear alternate-reverse;
+    color: #0ff;
+    z-index: -2;
+}
+
+@keyframes glitch-top {
+    0% {
+        clip: rect(0, 900px, 45px, 0);
+        transform: translate(-2px, -2px);
+    }
+    20% {
+        clip: rect(10px, 900px, 55px, 0);
+        transform: translate(2px, 2px);
+    }
+    40% {
+        clip: rect(20px, 900px, 65px, 0);
+        transform: translate(-2px, 2px);
+    }
+    60% {
+        clip: rect(30px, 900px, 75px, 0);
+        transform: translate(2px, -2px);
+    }
+    80% {
+        clip: rect(40px, 900px, 85px, 0);
+        transform: translate(-2px, -2px);
+    }
+    100% {
+        clip: rect(50px, 900px, 95px, 0);
+        transform: translate(2px, 2px);
+    }
+}
+
+@keyframes glitch-bottom {
+    0% {
+        clip: rect(85px, 900px, 140px, 0);
+        transform: translate(2px, 2px);
+    }
+    20% {
+        clip: rect(75px, 900px, 130px, 0);
+        transform: translate(-2px, -2px);
+    }
+    40% {
+        clip: rect(65px, 900px, 120px, 0);
+        transform: translate(2px, -2px);
+    }
+    60% {
+        clip: rect(55px, 900px, 110px, 0);
+        transform: translate(-2px, 2px);
+    }
+    80% {
+        clip: rect(45px, 900px, 100px, 0);
+        transform: translate(2px, 2px);
+    }
+    100% {
+        clip: rect(35px, 900px, 90px, 0);
+        transform: translate(-2px, -2px);
+    }
+}
+
+.desc {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.countdown {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+footer {
+    margin-top: 3rem;
+    color: #64748b;
+    font-size: 0.9rem;
+}
