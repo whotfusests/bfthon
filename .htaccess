@@ -1,4 +1,4 @@
-//Remove .thtml
+//Remove .html extensions in urls
 RewriteEngine On
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
