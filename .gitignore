@@ -1,0 +1,6 @@
+# Web files
+static/
+.github/workflows/
+
+# Python files
+pyproject.toml

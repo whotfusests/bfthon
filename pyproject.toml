@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bfthon"
+version = "1.0.0"
+authors = [
+  { name = "whotfusests" },
+]
+description = "Encode Python strings to Brainfuck and decode Brainfuck to Python strings."
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["brainfuck", "encode", "decode", "python"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries",
+]
+
+dependencies = []
+
+[project.urls]
+repository = "https://github.com/whotfusests/bfthon"
+homepage = "https://whotfusests.github.io/bfthon/"
