@@ -21,7 +21,7 @@ A lightweight Python module for bidirectional conversion between Python strings 
 ## Installation
 
 ```bash
-pip install git+https://github.com/whotfusests/bfthon.git
+pip install https://github.com/whotfusests/bfthon.git
 ```
 
 ## Usage Examples
