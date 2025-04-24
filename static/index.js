@@ -1,5 +1,5 @@
         function copyInstall() {
-            const text = "pip install git+https://github.com/whotfusests/bfthon.git";
+            const text = "pip install https://github.com/whotfusests/bfthon.git";
             navigator.clipboard.writeText(text).then(() => {
                 const btn = document.querySelector('.btn-primary');
                 btn.textContent = "Copied!";
